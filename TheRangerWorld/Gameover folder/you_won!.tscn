@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://duhors0inii54"]
+
+[ext_resource type="Script" path="res://Gameover folder/game_over.gd" id="1_y4u8o"]
+
+[node name="You Won!" type="CanvasLayer"]
+script = ExtResource("1_y4u8o")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.101961, 1, 1, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 159.0
+offset_right = -593.0
+offset_bottom = -466.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+text = "You Won!!"
+
+[node name="Click here to play again" type="Button" parent="."]
+modulate = Color(0.282353, 0.733333, 0.231373, 1)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 486.0
+offset_top = 276.0
+offset_right = -561.0
+offset_bottom = -318.0
+scale = Vector2(2, 2)
+text = "Click here to 
+play again"
+
+[node name="Leave" type="Button" parent="."]
+modulate = Color(1, 0, 0.0117647, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 485.0
+offset_top = 440.0
+offset_right = -564.0
+offset_bottom = -177.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+text = "Leave Game"
+
+[connection signal="pressed" from="Click here to play again" to="." method="_on_respawn_pressed"]
+[connection signal="pressed" from="Click here to play again" to="." method="_on_click_here_to_play_again_pressed"]
+[connection signal="pressed" from="Leave" to="." method="_on_leave_pressed"]

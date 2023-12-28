@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://cu3b06yn0p2y0"]
+
+[ext_resource type="Script" path="res://inventory/inventory_item.gd" id="1_fr7m1"]
+[ext_resource type="Texture2D" uid="uid://gu1vgkjsdx7i" path="res://art/bow.png" id="2_nubv4"]
+
+[resource]
+script = ExtResource("1_fr7m1")
+name = "Bubble_bow"
+texture = ExtResource("2_nubv4")

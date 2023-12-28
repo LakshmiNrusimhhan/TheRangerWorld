@@ -122,6 +122,7 @@ func _on_hitbox_area_body_exited(body):
 	print("_on_hitbox_area_body_exited")
 	if body.has_method("slime_damaging") or body.has_method("boss_slime_damaging"):
 		print("exited")
+		print("test blah blah blah")
 		slime_inattack_range = false
 
 func slime_attack():

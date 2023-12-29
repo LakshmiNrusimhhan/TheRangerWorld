@@ -344,6 +344,15 @@ script = ExtResource("9_bla0j")
 position = Vector2(193, -301)
 shape = SubResource("RectangleShape2D_cscga")
 
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0.576471, 0.278431, 1)
+offset_left = 180.0
+offset_top = -288.0
+offset_right = 192.0
+offset_bottom = -265.0
+scale = Vector2(2, 2)
+text = "↑"
+
 [connection signal="body_entered" from="Area2dW" to="Area2dW" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2dW" to="Area2dW" method="_on_body_exited"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

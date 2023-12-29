@@ -338,6 +338,15 @@ position = Vector2(-457, -840)
 [node name="slime7" parent="." instance=ExtResource("6_nu303")]
 position = Vector2(-310, -1074)
 
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0.635294, 0.423529, 1)
+offset_left = 226.0
+offset_top = -669.0
+offset_right = 242.0
+offset_bottom = -646.0
+scale = Vector2(2, 2)
+text = "→"
+
 [connection signal="body_entered" from="AreaB2d" to="AreaB2d" method="_on_body_entered"]
 [connection signal="body_exited" from="AreaB2d" to="AreaB2d" method="_on_body_exited"]
 [connection signal="body_entered" from="Awea_2B" to="Awea_2B" method="_on_body_entered"]

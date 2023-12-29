@@ -318,6 +318,15 @@ position = Vector2(789, -611)
 [node name="slime4" parent="." instance=ExtResource("8_idova")]
 position = Vector2(883, -732)
 
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0.576471, 0.278431, 1)
+offset_left = 1373.0
+offset_top = -1114.0
+offset_right = 1385.0
+offset_bottom = -1091.0
+scale = Vector2(2, 2)
+text = "↑"
+
 [connection signal="body_entered" from="Area_bud" to="Area_bud" method="_on_body_entered"]
 [connection signal="body_exited" from="Area_bud" to="Area_bud" method="_on_body_exited"]
 [connection signal="body_entered" from="Area_blud" to="Area_blud" method="_on_body_entered"]
